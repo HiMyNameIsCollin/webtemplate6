@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+
+
+
+@tailwind utilities;
+.appWrap{
+	background-color: #aaa0ea;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%234810a1' fill-opacity='0.25' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+header {
+	z-index: 1;
+}
+header::before {
+	background: black;
+	content: '';
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+nav ul li {
+	clip-path: polygon(0 0, 100% 0, 100% 90%, 65% 90%, 65% 80%, 55% 70%, 45% 70%, 35% 80%, 35% 90%, 0 90%)
+}
+
+.navDecal {
+	bottom: -12px;
+	left: calc((100% - 24px)/2);
+	opacity: 0;
+	transform: scale(1.10);
+	z-index: 1;
+}
+
+
+.navDecal--active::after {
+	content: '';
+	background: black;
+	border-radius: 50%;
+	height: 50%;
+	left: calc((100% - 50%) / 2);
+	position: absolute;
+	top: calc((100% - 50%) / 2);
+	width: 50%;
+	z-index: -1;
+}

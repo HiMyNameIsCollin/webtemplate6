@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <div class='appWrap container-2xl mx-auto'>
+      <header class='container-none relative overflow-hidden text-white mx-auto py-6 px-4 sm:py-4 flex items-center'>
+        <p class='text-3xl '> Your Name.</p>
+        <nav class='ml-auto'>
+           <ul class="text-center hidden sm:flex">
+             <li class='py-4 mx-2 sm:w-24 md:w-32 lg:w-40 border-b-2 relative'>
+                <a class='transform translate-y-1 block font-bold' href=""> Home</a>
+                <span class="navDecal navDecal--active absolute p-3 rounded-full bg-white overflow-hidden"></span>
+              </li>
+             <li class='py-4 mx-2 sm:w-24 md:w-32 lg:w-40 border-b-2 border-opacity-0 relative'>
+                <a class='transform translate-y-1 block font-bold' href=""> Posts</a>
+                <span class="navDecal navDecal--active absolute p-3 rounded-full bg-white overflow-hidden"></span>
+              </li>
+             <li class='py-4 mx-2 sm:w-24 md:w-32 lg:w-40 border-b-2 border-opacity-0 relative'>
+                <a class='transform translate-y-1 block font-bold' href=""> Cool Stuff</a>
+                <span class="navDecal navDecal--active absolute p-3 rounded-full bg-white overflow-hidden"></span>
+              </li>
+           </ul>
+        </nav>
+      </header>
+
+      <section class='intro py-6 px-4'> 
+       <!----------MOST RECENT POST  -------------> 
+         <div class='bg-white flex flex-col sm:flex-row lg:w-3/4'>
+            <div class='sm:w-2/4 py-6 px-4 md:p-16 xl:p-24 max-w-prose mx-auto'>
+              <h1 class='text-4xl mb-2'>
+                Welcome to Lorem ipsum dolor sit.
+              </h1>
+              <p class='text-sm mb-4 text-gray-700'>
+                March 16th, 2021
+              </p>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam, architecto corrupti debitis, a molestiae. Quasi ea enim saepe vitae voluptates veritatis nobis nemo mollitia accusantium ipsum impedit error libero eligendi, doloremque cupiditate cumque ad, quaerat esse iure magnam distinctio culpa aspernatur dolorem ipsa? Numquam, harum veniam corporis corrupti sunt.</p>
+            </div> 
+            <div class='w-full h-80 sm:h-auto sm:w-2/4 relative'>
+              <img class='absolute object-cover object-center h-full max-w-full w-full' src='https://source.unsplash.com/random'>
+            </div>
+         </div>
+      </section>      
+    </div>
+
+
+  
+    <script type="module" src="/main.js"></script>
+  </body>
+
+</html>
